@@ -1,0 +1,93 @@
+.admin-dashboard {
+  display: flex;
+  height: 100vh; /* Make the dashboard full height */
+}
+
+.sidebar {
+  height: 100vh; /* Full height for the sidebar */
+  width: 0; /* Start hidden */
+  background: #2c3e50;
+  color: white;
+  transition: width 0.3s;
+  overflow: hidden;
+  border-radius: 0 10px 10px 0;
+}
+
+.sidebar.open {
+  width: 250px; /* Width when open */
+}
+
+.sidebar .close-btn {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  display: block;
+  text-align: right;
+}
+
+.sidebar h2 {
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #34495e;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  padding: 15px 20px;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto; /* Allow scrolling if content overflows */
+  margin-left: 60px; /* Space for the hamburger icon */
+}
+
+.hamburger-menu {
+  position: absolute; /* Position it absolutely */
+  top: 20px; /* Adjust as necessary */
+  left: 20px; /* Space from the left edge */
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f8f9fa;
+  z-index: 1000; /* Ensure it is above other elements */
+}
+
+.hamburger-menu .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 4px 0;
+  transition: all 0.3s;
+}
+
+/* New styles for profile and stats boxes */
+.admin-profile-box,
+.admin-stats-box {
+  background-color: #b1a5a5;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(90, 88, 88, 0.1);
+  padding: 30px;
+  margin: 20px 0; /* Space between boxes */
+}
+
+.admin-profile-box h2,
+.admin-stats-box h2 {
+  margin-bottom: 15px;
+}

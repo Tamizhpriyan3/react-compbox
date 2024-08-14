@@ -1,0 +1,58 @@
+/* src/components/EscalationPeriod.css */
+.escalation-period-container {
+  padding: 20px;
+  background: linear-gradient(135deg, #3c91e6, #3c4f6b); /* Gradient from blue to white */
+  border-radius: 12px;
+  margin: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #333; /* Changed to dark text color */
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  background: linear-gradient(45deg, #1f4037, #2b684b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* Gradient text */
+}
+
+.problems-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.problem-item {
+  background: linear-gradient(120deg, #e1f5fe 0%, #bbdefb 100%); /* Gradient from light blue to white */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.problem-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.problem-item h2 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: #333; /* Dark text color for contrast */
+}
+
+.problem-item p {
+  font-size: 16px;
+  color: #444; /* Dark text color for readability */
+  line-height: 1.6;
+}
+
+.problem-item p strong {
+  color: #111; /* Dark text color for emphasis */
+  font-weight: bold;
+}

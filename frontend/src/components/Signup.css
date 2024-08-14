@@ -1,0 +1,78 @@
+/* AdminSignup.css */
+
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f7f7f7;
+}
+
+.form-wrapper {
+  background: #fff;
+  padding: 30px; /* Increased padding for better spacing */
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  max-width: 400px; /* Limit the width of the form */
+  width: 100%; /* Full width on small screens */
+}
+
+h2 {
+  margin-bottom: 20px; /* Space between heading and form */
+  font-size: 1.5em; /* Size of the heading */
+  color: #333; /* Heading color */
+  text-align: center; /* Center the heading */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold; /* Make label text bold */
+  color: #555; /* Darker color for labels */
+}
+
+input {
+  margin-bottom: 15px; /* Increased space between inputs */
+  padding: 12px; /* More padding for comfort */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s; /* Smooth transition for focus */
+}
+
+input:focus {
+  border-color: #28a745; /* Change border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+button {
+  padding: 12px; /* More padding for buttons */
+  background-color: #28a745; /* Green background */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em; /* Increase font size */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+button:hover {
+  background-color: #218838; /* Darker green on hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.message {
+  margin-top: 10px;
+  color: green; /* Success message color */
+  font-weight: bold;
+  text-align: center; /* Center the message */
+}
+
+.error-message {
+  margin-top: 10px;
+  color: red; /* Error message color */
+  text-align: center; /* Center the error message */
+}
